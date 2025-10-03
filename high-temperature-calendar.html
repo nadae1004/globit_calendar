@@ -90,8 +90,9 @@
 
         /* Selection Styles */
         ::selection {
-            background-color: #0064dd;
-            color: #ffffff;
+            background-color: #F8F9FF;
+            border: 1px solid #0165DD;
+            color: #0165DD;
         }
 
         /* Scrollbar Styles */
@@ -117,7 +118,7 @@
         body {
             font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: #ffffff;
-            color: #18181a;
+            color: #474752;
             line-height: 1.5;
         }
 
@@ -2210,7 +2211,8 @@
 
             .calendar-container,
             .station-list-container {
-                max-width: none;
+                /*max-width: none;*/
+                height: 520px;
             }
 
             .legend {
@@ -2563,7 +2565,7 @@
         }
 
         .rbc-off-range-bg {
-            background: #e6e6e6;
+            background: #F1F1F3 !important;
         }
 
         .rbc-header {
@@ -2579,11 +2581,18 @@
             font-weight: bold;
             font-size: 90%;
             min-height: 0;
-            border-bottom: 1px solid #ddd;
+            /* border-bottom: 1px solid #ddd; */
         }
 
         .rbc-header+.rbc-header {
-            border-left: 1px solid #ddd;
+            /* border-left: 1px solid #ddd; */
+            color: #9191A1;
+        }
+        .sunday{
+            color: #F46D19;
+        }
+        .saturday{
+            color: #4599FE !important;
         }
 
         .rbc-rtl .rbc-header+.rbc-header {
@@ -2650,7 +2659,8 @@
         }
 
         .rbc-today {
-            background-color: #eaf6ff;
+            background-color: #F8F9FF !important;
+            /*border: 1px solid #0165DD !important;*/
         }
 
         .rbc-toolbar {
@@ -2875,7 +2885,6 @@
 
         .rbc-month-view {
             position: relative;
-            border: 1px solid #ddd;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -2892,6 +2901,7 @@
             user-select: none;
             -webkit-user-select: none;
             height: 100%;
+            gap: 4px;
         }
 
         .rbc-month-header {
@@ -2923,7 +2933,7 @@
         }
 
         .rbc-month-row+.rbc-month-row {
-            border-top: 1px solid #ddd;
+            /* border-top: 1px solid #ddd; */
         }
 
         .rbc-date-cell {
@@ -2958,17 +2968,20 @@
             -ms-flex: 1 0 0px;
             flex: 1 0 0;
             overflow: hidden;
-            right: 1px;
+            gap: 4px;
         }
 
         .rbc-day-bg {
             -webkit-box-flex: 1;
             -ms-flex: 1 0 0%;
             flex: 1 0 0%;
+            border-radius: 20px;
+            background-color: #fff;
+            border: 1px solid #e4e4e6;
         }
 
         .rbc-day-bg+.rbc-day-bg {
-            border-left: 1px solid #ddd;
+            /* border-left: 1px solid #ddd; */
         }
 
         .rbc-rtl .rbc-day-bg+.rbc-day-bg {
@@ -3460,7 +3473,7 @@
                                 <div class="rbc-calendar">
                                     <div class="rbc-month-view" role="table" aria-label="Month View">
                                         <div class="rbc-row rbc-month-header" role="row">
-                                            <div class="rbc-header"><span role="columnheader"
+                                            <div class="rbc-header sunday"><span role="columnheader"
                                                     aria-sort="none">일요일</span></div>
                                             <div class="rbc-header"><span role="columnheader"
                                                     aria-sort="none">월요일</span></div>
@@ -3472,7 +3485,7 @@
                                                     aria-sort="none">목요일</span></div>
                                             <div class="rbc-header"><span role="columnheader"
                                                     aria-sort="none">금요일</span></div>
-                                            <div class="rbc-header"><span role="columnheader"
+                                            <div class="rbc-header saturday"><span role="columnheader"
                                                     aria-sort="none">토요일</span></div>
                                         </div>
                                         <div class="rbc-month-row" role="rowgroup">
@@ -3566,7 +3579,7 @@
                                                 <div class="rbc-day-bg"></div>
                                                 <div class="rbc-day-bg custom-calendar-high-temp-date"></div>
                                                 <div class="rbc-day-bg custom-calendar-high-temp-date"></div>
-                                                <div class="rbc-day-bg custom-calendar-high-temp-date"></div>
+                                                <div class="rbc-day-bg custom-calendar-high-temp-date custom-calendar-selected-date"></div>
                                                 <div class="rbc-day-bg"></div>
                                                 <div class="rbc-day-bg"></div>
                                                 <div class="rbc-day-bg"></div>
@@ -3613,7 +3626,7 @@
                                                 <div class="rbc-day-bg"></div>
                                                 <div class="rbc-day-bg"></div>
                                                 <div class="rbc-day-bg"></div>
-                                                <div class="rbc-day-bg custom-calendar-selected-date"></div>
+                                                <div class="rbc-day-bg"></div>
                                                 <div class="rbc-day-bg"></div>
                                                 <div class="rbc-day-bg"></div>
                                             </div>
