@@ -1,0 +1,78 @@
+/* 커스텀 캘린더 스타일 */
+/* 모든 클래스는 custom-calendar- 접두사를 사용하여 라이브러리 기본 스타일과 구분 */
+
+/* 캘린더 래퍼 */
+.custom-calendar-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* 네비게이션 헤더 */
+.custom-calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* 네비게이션 버튼 */
+.custom-calendar-nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-calendar-nav-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* 월/연도 표시 */
+.custom-calendar-month-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 캘린더 본체 */
+.custom-calendar-body {
+  height: 100%;
+  flex: 1;
+}
+
+/* 날짜 셀 */
+.custom-calendar-date-cell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 날짜 숫자 */
+.custom-calendar-date-number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+/* 선택된 날짜 */
+.custom-calendar-selected-date {
+  border: 2px solid #007bff;
+  border-radius: 4px;
+}
+
+/* 고수온 발생 날짜 */
+.custom-calendar-high-temp-date {
+  background-color: #fadbcd;
+}
+
+/* 고수온 정점 개수 표시 */
+.custom-calendar-point-count {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  font-size: 25px;
+  color: #f46d19;
+}
