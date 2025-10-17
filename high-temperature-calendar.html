@@ -90,9 +90,8 @@
 
         /* Selection Styles */
         ::selection {
-            background-color: #F8F9FF;
-            border: 1px solid #0165DD;
-            color: #0165DD;
+            background-color: #0064dd;
+            color: #ffffff;
         }
 
         /* Scrollbar Styles */
@@ -118,7 +117,7 @@
         body {
             font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: #ffffff;
-            color: #474752;
+            color: #18181a;
             line-height: 1.5;
         }
 
@@ -2211,8 +2210,7 @@
 
             .calendar-container,
             .station-list-container {
-                /*max-width: none;*/
-                height: 520px;
+                max-width: none;
             }
 
             .legend {
@@ -2565,7 +2563,7 @@
         }
 
         .rbc-off-range-bg {
-            background: #F1F1F3 !important;
+            background: #e6e6e6;
         }
 
         .rbc-header {
@@ -2581,18 +2579,11 @@
             font-weight: bold;
             font-size: 90%;
             min-height: 0;
-            /* border-bottom: 1px solid #ddd; */
+            border-bottom: 1px solid #ddd;
         }
 
         .rbc-header+.rbc-header {
-            /* border-left: 1px solid #ddd; */
-            color: #9191A1;
-        }
-        .sunday{
-            color: #F46D19;
-        }
-        .saturday{
-            color: #4599FE !important;
+            border-left: 1px solid #ddd;
         }
 
         .rbc-rtl .rbc-header+.rbc-header {
@@ -2659,8 +2650,7 @@
         }
 
         .rbc-today {
-            background-color: #F8F9FF !important;
-            /*border: 1px solid #0165DD !important;*/
+            background-color: #eaf6ff;
         }
 
         .rbc-toolbar {
@@ -2885,6 +2875,7 @@
 
         .rbc-month-view {
             position: relative;
+            border: 1px solid #ddd;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -2901,7 +2892,6 @@
             user-select: none;
             -webkit-user-select: none;
             height: 100%;
-            gap: 4px;
         }
 
         .rbc-month-header {
@@ -2933,7 +2923,7 @@
         }
 
         .rbc-month-row+.rbc-month-row {
-            /* border-top: 1px solid #ddd; */
+            border-top: 1px solid #ddd;
         }
 
         .rbc-date-cell {
@@ -2975,13 +2965,10 @@
             -webkit-box-flex: 1;
             -ms-flex: 1 0 0%;
             flex: 1 0 0%;
-            border-radius: 20px;
-            background-color: #fff;
-            border: 1px solid #e4e4e6;
         }
 
         .rbc-day-bg+.rbc-day-bg {
-            /* border-left: 1px solid #ddd; */
+            border-left: 1px solid #ddd;
         }
 
         .rbc-rtl .rbc-day-bg+.rbc-day-bg {
